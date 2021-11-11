@@ -7,6 +7,7 @@
 This is a checklist for my game: Re:Time VR. Features that are listed here are features I will work on.
 
 Re:Time VR is a VR FPS with time based mechanics and a focus on arcade gameplay (Big Levels with a focus on Replayability) and Tenet style astetics.
+
 In this game, combat revolves around a single gun with various unlockable skills that often have to do with time control. There is a Progression system that allows you to constantly upgrade your gun with different abilities and buffs.
 
 
