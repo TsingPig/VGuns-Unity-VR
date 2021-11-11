@@ -20,7 +20,7 @@ In this game, combat revolves around a single gun with various unlockable skills
 
 - [x] My game offers a smooth locomotion mode.
 
-- [ ] Players can choose between head-based or controller-based movement. [^controller_head_based]
+- [ ] Players can choose between head-based, controller-based or decamove-based movement. [^controller_head_based]
 
 [^controller_head_based]: Some games also offer "hybrid" options where the movement vector is derived from an average between the head and the controller. Other games also can figure out the movement direction via additional hardware such as hip trackers or [DecaMove](https://www.deca.net/decamove/).
 
