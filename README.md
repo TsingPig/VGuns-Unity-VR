@@ -98,6 +98,26 @@ In this game, combat revolves around a single gun with various unlockable skills
 
 [^robo_recall_teleportation]: If you are not familiar with Robo Recall teleporation, [this video](https://youtu.be/gBZcN2NPLb8?t=188) shows exactly how it works. Note that this behavior should be optional, as some people might feel disoriented when the direction is changed after teleportation, and it might be easy to accidentally turn the thumbstick in the wrong direction during teleportation.
 
+### Enemies
+
+- [ ] My game has working Enemies that run towards the player and/or shoot ar the player.
+- [ ] My game has multiple types of enemies(Heavy, Fast, Simple, Advanced)
+- [ ] My game has a line of sight for the enemies and player detection.
+
+### Gun
+
+- [x] My game has a Working Gun object
+- [ ] My game has a Gun that can fit multiple magazines with changing variables.
+- [ ] My game has a Gun that can fire a raycast and spawn a bullethole and muzzleflash
+- [ ] My game has a Gun that can spawn a rigidbody that moves towards the end of a raycast
+- [ ] My game has a Gun that can spawn bullets that have multiple time control abilities attached to them
+
+### Time Control
+
+- [ ] My game has working Time control Implementation (Just area's, and working player, enemie and object detection)
+- [ ] My game has Time Control attached to the magazines of the gun.
+- [ ] My game has optimization for Time Control (Small Files for recordings)
+
 ### Crouching
 
 - [ ] My game allows players to physically crouch in real life, adjusting the in-game hitbox and movement speed accordingly.
