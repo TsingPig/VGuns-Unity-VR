@@ -24,7 +24,7 @@ In this game, combat revolves around a single gun with various unlockable skills
 
 [^controller_head_based]: Some games also offer "hybrid" options where the movement vector is derived from an average between the head and the controller. Other games also can figure out the movement direction via additional hardware such as hip trackers or [DecaMove](https://www.deca.net/decamove/).
 
-- [] My game offers different smooth locomotion visual effects to reduce motion sickness:
+- [ ] My game offers different smooth locomotion visual effects to reduce motion sickness:
 
     - [ ] Artificially decrease FoV to a user-specified amount.
   
