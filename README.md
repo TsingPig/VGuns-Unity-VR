@@ -1,4 +1,4 @@
-# vr-game-checklist
+# Re:Time VR - Checklist
 
 
 
@@ -6,13 +6,18 @@
 
 This is a checklist for my game: Re:Time VR. Features that are listed here are features I will work on.
 
+Re:Time VR is a VR FPS with time based mechanics and a focus on arcade gameplay (Big Levels with a focus on Replayability) and Tenet style astetics.
+In this game, combat revolves around a single gun with various unlockable skills that often have to do with time control. There is a Progression system that allows you to constantly upgrade your gun with different abilities and buffs.
+
+
+
 ## Checklist
 
 ### Locomotion Options
 
 #### Smooth Locomotion
 
-- [*] My game offers a smooth locomotion mode.
+- [ ] My game offers a smooth locomotion mode.
 
 - [ ] Players can choose between head-based or controller-based movement. [^controller_head_based]
 
@@ -142,7 +147,7 @@ This is a checklist for my game: Re:Time VR. Features that are listed here are f
 
 ### Weapon Handling
 
-- [*] My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]
+- [ ] My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]
 
 [^any_hand_weapon_handling]: Some games, such as "Half-Life: Alyx", arbitrarily decide to glue a weapon to one of the player's hands, preventing them from performing many interesting and immersive actions (e.g. dual-wielding, temporarily holding the weapon with the non-dominant hand, corner-peeking from the non-dominant hand side, temporarily dropping the weapon to do something else, throwing the weapon as a last resort or as a stylish move, etc.). While an option to glue a weapon to the player's hand might be a good idea as an accessibility option, it should not be the default.
 
@@ -163,6 +168,10 @@ This is a checklist for my game: Re:Time VR. Features that are listed here are f
 - [ ] UI elements in my game are drawn at an appropriate distance, in order to be in focus. [^ui_focus_distance]
 
 [^ui_focus_distance]: Different HMDs have different in-game distances from the player camera at which the image will appear in focus. Your UI should be drawn at those distances to ensure readability.
+
+
+
+## Extras and Nice-To-Haves
 
 ## Contributing
 
