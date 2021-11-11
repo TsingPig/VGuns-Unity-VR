@@ -24,25 +24,7 @@ In this game, combat revolves around a single gun with various unlockable skills
 
 [^controller_head_based]: Some games also offer "hybrid" options where the movement vector is derived from an average between the head and the controller. Other games also can figure out the movement direction via additional hardware such as hip trackers or [DecaMove](https://www.deca.net/decamove/).
 
-- [ ] Players can tweak the movement speed multiplier in the options.
-
-- If my game has a sprint mechanic, players can choose how to activate it between the following modes:
-  
-  - [ ] By quickly tapping the same direction twice on the thumbstick. [^double_tap_sprint]
-
-  [^double_tap_sprint]: Double-tap sprinting is especially important for Valve Index controller owners, as it has been widely reported that keeping the thumbstick pressed down can lead to thumbstick drift.
-
-  - [ ] By keeping the thumbstick pressed.
-
-  - [ ] By pressing the thumbstick once, then releasing it. (Sprinting will continue until the player stops moving.)
-
-  - [ ] By keeping an arbitrary button (chosen by players) pressed.
-
-  - [ ] By arm-swinging or putting the arms down to the sides.
-
-- [ ] Players can fine-tune their in-game movement speed by controlling how far they push the thumbstick in one direction.
-
-- My game offers different smooth locomotion visual effects to reduce motion sickness:
+- [] My game offers different smooth locomotion visual effects to reduce motion sickness:
 
     - [ ] Artificially decrease FoV to a user-specified amount.
   
