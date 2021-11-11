@@ -4,13 +4,7 @@
 
 ## Introduction
 
-So, you're making a Virtual Reality game -- that's great! This checklist will help you and your team deliver the best possible experience for your users. Just as it is a *sin* to release a non-VR FPS game without a FoV slider or mouse sensitivity options, there are many settings and options that most VR games should have.
-
-The checklist below will make sure you don't miss any. The items are ordered from the most important to the least important. Not all items are applicable to every game, so please use your common sense.
-
-*(Note: I am not saying that every single checkbox should be ticked, but you should at least evaluate all of them.)*
-
-
+This is a checklist for my game: Re:Time VR. Features that are listed here are features I will work on.
 
 ## Checklist
 
@@ -18,7 +12,7 @@ The checklist below will make sure you don't miss any. The items are ordered fro
 
 #### Smooth Locomotion
 
-- [ ] My game offers a smooth locomotion mode.
+- [*] My game offers a smooth locomotion mode.
 
 - [ ] Players can choose between head-based or controller-based movement. [^controller_head_based]
 
@@ -148,7 +142,7 @@ The checklist below will make sure you don't miss any. The items are ordered fro
 
 ### Weapon Handling
 
-- [ ] My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]
+- [*] My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]
 
 [^any_hand_weapon_handling]: Some games, such as "Half-Life: Alyx", arbitrarily decide to glue a weapon to one of the player's hands, preventing them from performing many interesting and immersive actions (e.g. dual-wielding, temporarily holding the weapon with the non-dominant hand, corner-peeking from the non-dominant hand side, temporarily dropping the weapon to do something else, throwing the weapon as a last resort or as a stylish move, etc.). While an option to glue a weapon to the player's hand might be a good idea as an accessibility option, it should not be the default.
 
@@ -170,28 +164,6 @@ The checklist below will make sure you don't miss any. The items are ordered fro
 
 [^ui_focus_distance]: Different HMDs have different in-game distances from the player camera at which the image will appear in focus. Your UI should be drawn at those distances to ensure readability.
 
-
-
-## Extras and Nice-To-Haves
-
-### Computer Interaction
-
-- [ ] My game allows settings to be configured on the computer via mouse/keyboard on the fly, while the game is running.
-
-- [ ] Spectators can interact on the computer while players are in VR, for example by changing or restarting levels, or tweaking options.
-
-
-
 ## Contributing
 
-Is something missing from the checklist? Create an [issue](https://github.com/SuperV1234/vr-game-checklist/issues) to discuss it, or directly contribute something new by opening a [pull request](https://github.com/SuperV1234/vr-game-checklist/pulls).
-
-
-
-## Self-Promotion
-
-Check out [**Quake VR**](https://www.youtube.com/watch?v=MBoI16z8Nxg), my free and open-source Quake mod that turns the 1996 classic into a first-class PCVR experience!
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=MBoI16z8Nxg"><img src="https://img.youtube.com/vi/MBoI16z8Nxg/0.jpg"></img></a>
-</p>
+This checklist is a modified for from this one: https://github.com/SuperV1234/vr-game-checklist/blob/main/README.md If any of you want to use it!
