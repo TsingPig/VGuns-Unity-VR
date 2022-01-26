@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 2565836327702532533}
   - component: {fileID: 2565836327702532536}
   m_Layer: 8
-  m_Name: Teleport Manager
+  m_Name: Right Teleport Manager
   m_TagString: XRRig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1127,7 +1127,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d583a25c413a12468fd9ce99fb5bbdc, type: 2}
+  - {fileID: 2100000, guid: 9a8e730abbb876a4d9551348bc9d14be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3763,7 +3763,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 4096
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -4357,7 +4357,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 4096
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -5642,7 +5642,6 @@ GameObject:
   - component: {fileID: 4460531382388078979}
   - component: {fileID: 4832168211630479034}
   - component: {fileID: 4832168211630479035}
-  - component: {fileID: 3830358867674022597}
   - component: {fileID: 1221334210}
   m_Layer: 10
   m_Name: XR Rig
@@ -5754,19 +5753,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.6452873, z: 0}
---- !u!65 &3830358867674022597
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940586920907814101}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9564655, y: 2.2717862, z: 0.7440938}
-  m_Center: {x: 0.026728272, y: 1.0037887, z: -0.055532992}
 --- !u!114 &1221334210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6717,7 +6703,7 @@ MonoBehaviour:
       m_Name: Left Hand Turn
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: ed4ced61-f811-46f7-a43f-7277b015268b
+      m_Id: c27d1943-55c8-4158-ba06-52c8b97cb875
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -6822,7 +6808,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d583a25c413a12468fd9ce99fb5bbdc, type: 2}
+  - {fileID: 2100000, guid: 9a8e730abbb876a4d9551348bc9d14be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

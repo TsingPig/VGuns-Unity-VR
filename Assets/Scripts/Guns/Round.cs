@@ -35,13 +35,6 @@ public class Round : MonoBehaviour
             Destroy(gameObject); // Deletes the round
         }
         
-        else
-        {
-            new WaitForSeconds(Waittime);
-            
-            Destroy(gameObject);
-        }
-
 
         XRTarget XRTarget = other.gameObject.GetComponent<XRTarget>();
         // Only attempts to inflict damage if the other game object has
@@ -67,12 +60,6 @@ public class Round : MonoBehaviour
 
         }
         
-        else
-        {
-            new WaitForSeconds(Waittime);
-            
-            Destroy(gameObject);
-        }
-       
+      
     }
 }
