@@ -13,7 +13,7 @@ public class TeleportationManager : MonoBehaviour
 
     [SerializeField] public XRRayInteractor _RayInteractor;
 
-    public GameObject teleportable;
+    [SerializeField] public GameObject teleportable;
     
     [SerializeField] public TeleportationProvider _teleportationProvider;
 
@@ -21,7 +21,6 @@ public class TeleportationManager : MonoBehaviour
 
     {
         _RayInteractor.enabled = false;
-        
 
         activate.action.performed += TeleportActivate;
         

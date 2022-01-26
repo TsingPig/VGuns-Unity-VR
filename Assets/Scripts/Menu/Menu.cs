@@ -20,6 +20,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+ 
+    public void LoadTutorial(string level)
+    {
+    SceneManager.LoadScene(level);
+     
+    }
     
     public void Quit()
     {

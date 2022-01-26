@@ -811,6 +811,17 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": """",
+                    ""id"": ""c8ee815b-26bc-41ea-91cb-c2b7b6220ce0"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Teleport Mode Activate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""de466e6e-12bf-46a1-b0fd-ffbc343f3399"",
                     ""path"": ""<XRController>{LeftHand}/thumbstickClicked"",
                     ""interactions"": """",

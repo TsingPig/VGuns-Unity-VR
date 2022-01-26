@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Hologram 1
   m_Shader: {fileID: 4800000, guid: 72d02a391ea40104e8bfd8b63b73e8e2, type: 3}
   m_ShaderKeywords: 
@@ -34,7 +35,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -58,8 +67,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowOffset:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -75,25 +102,38 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HoloCrowdness: 2
-    - _HoloDistance: 0.315
+    - _HoloDistance: 0.417
     - _HoloGap: 0.23
-    - _HoloValue: 0.91
+    - _HoloSpeed: 0.54
+    - _HoloValue: 1.58
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimMax: 1
+    - _RimMin: 1
     - _RimPower: 1.38
+    - _Shininess: 0.078125
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.48869863, g: 0.8867924, b: 0.40574938, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlitchDirection: {r: 1, g: 1, b: 1, a: 0}
     - _GlitchValue: {r: 0, g: 0, b: 0, a: 0}
+    - _HColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
     - _HoloColor: {r: 0, g: 0.7924528, b: 0.093910754, a: 0.105882354}
     - _HoloDir: {r: 0, g: 1, b: 0, a: 1}
-    - _HoloDirection: {r: 1, g: 0, b: 0, a: 0}
-    - _RimColor: {r: 0.5477066, g: 0, b: 1, a: 1}
+    - _HoloDirection: {r: 1, g: 1, b: 1, a: 0}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SColor: {r: 0.09433961, g: 0.06897472, b: 0.06897472, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

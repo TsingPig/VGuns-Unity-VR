@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class XRTarget : MonoBehaviour {
     
     public float health;
+    
+    public TextMeshPro livesText;
     
     public GameObject deathScreen;
 
@@ -16,12 +20,16 @@ public class XRTarget : MonoBehaviour {
     public GameObject TeleportManagerLeft;
     public GameObject TeleportManagerRight;
 
+    public GameObject[] enemies;
 
-    void Update() {
+
+    void Update()
+    {
+        livesText.text = "Health: " + health;
+        
         if(health <= 0) {
             if (deathScreen.activeSelf)
             {
-                Time.timeScale = 0f;
 
                 ray_Right.SetActive(true);
                 ray_Left.SetActive(true);
@@ -38,8 +46,6 @@ public class XRTarget : MonoBehaviour {
                 if (!deathScreen.activeSelf)
                 {
                     Wait();
-                
-                    Time.timeScale = 0f;
 
                     ray_Right.SetActive(true);
                     ray_Left.SetActive(true);

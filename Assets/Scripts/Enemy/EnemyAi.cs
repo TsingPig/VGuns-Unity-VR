@@ -1,4 +1,6 @@
 ﻿
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -16,6 +18,8 @@ public class EnemyAi : MonoBehaviour
     public Transform Attackpoint;
     
     public float health;
+    
+    public TextMeshPro livesText;
 
     public AudioManager AudioManager;
     
@@ -43,6 +47,9 @@ public class EnemyAi : MonoBehaviour
 
     private void Update()
     {
+       
+        livesText.text = "Health: " + health;
+        
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
