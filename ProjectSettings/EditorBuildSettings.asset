@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7e6cf90fc439ec44e84a9e624e4df296
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 6b4cd049f77d5774398e357b3321f28f
-  - enabled: 1
     path: Assets/Scenes/Endless Level.unity
     guid: d38d9512f1c8351459285c77a715ffe8
   m_configObjects:

@@ -19,16 +19,16 @@ public class Gun : MonoBehaviour {
     XRGrabInteractable m_InteractableBase;
     
     //Gun Colliders
-    public Collider Gun_Collider_Physical = null;
+    //public Collider Gun_Collider_Physical = null;
     
     //Magazine Colliders
-    public Collider Magazine_Collider_Physical = null;
+    //public Collider Magazine_Collider_Physical = null;
 
     // How far forward the muzzle is from the centre of the gun
     private float muzzleOffset;
     
     //MagazineVariables
-    public MagazineVariables MagVar;
+    //public MagazineVariables MagVar;
     
     //Trigger Functions
     float m_TriggerHeldTime;
@@ -99,6 +99,9 @@ public class Gun : MonoBehaviour {
         m_InteractableBase.activated.AddListener(TriggerPulled);
         m_InteractableBase.deactivated.AddListener(TriggerReleased);
         
+        //Show leftover bullets
+        text.SetText(remainingAmmunition + " / " + ammunition);
+        
         //update if holding trigger
         //if (m_TriggerDown)
         //{
@@ -111,17 +114,6 @@ public class Gun : MonoBehaviour {
         //          }
         //      }
         //  }
-        
-        //Show leftover bullets
-        text.SetText(remainingAmmunition + " / " + ammunition);
-    }
-    
-    void OnTriggerEnter(Collider magazine)
-    {
-        if (magazine.gameObject.CompareTag("Magazine"))
-        {
-            magazine.gameObject.GetComponent<MagazineVariables>().ChangeMagVar();
-        }
     }
     
     /// Attempts to fire the gun
@@ -133,7 +125,7 @@ public class Gun : MonoBehaviour {
                 AudioManager.Play("Gun Fire");
                 // Instantiates the round at the muzzle position
                 GameObject spawnedRound = Instantiate(round, GunPov.transform.position, GunPov.transform.rotation);
-                GameObject muzzleflash = Instantiate(muzzleFlash, GunPov.transform.position, GunPov.transform.rotation);
+                //GameObject muzzleflash = Instantiate(muzzleFlash, GunPov.transform.position, GunPov.transform.rotation);
 
                 // Add a random variation to the round's direction
                 spawnedRound.transform.Rotate(new Vector3(
@@ -163,6 +155,7 @@ public class Gun : MonoBehaviour {
             nextShootTime = Time.time + reloadTime;
             shootState = ShootState.Reloading;
             text.SetText("Reloading");
+            AudioManager.Play("Reload");
         }
     }
     
@@ -177,7 +170,7 @@ public class Gun : MonoBehaviour {
     
     //Animating Trigger
     public void TriggerPulled(ActivateEventArgs args)
-    {
+    { 
         //m_Animator.SetTrigger(k_AnimTriggerDown);
         m_TriggerDown = true;
     }
@@ -192,28 +185,37 @@ public class Gun : MonoBehaviour {
     }
 
     
+    //     void OnTriggerEnter(Collider magazine)
+    //    {
+    //        if (magazine.gameObject.CompareTag("Magazine"))
+    //        {
+    //             magazine.gameObject.GetComponent<MagazineVariables>().ChangeMagVar();
+    //         }
+    //     }
+
+    
     //Events that happen when the magazine is inserted
     public void MagazineInsert()
     {
-        AudioManager.Play("Reload");
+        
         
         //Magvar
-        MagVar.ChangeStats();
+        //MagVar.ChangeStats();
             
         //reload gun
-        Reload();
+        //Reload();
         
         //Message
-        Debug.Log("Magazine Has Been Inserted");
+        //Debug.Log("Magazine Has Been Inserted");
         
         
         //Enable Colliders for Magazine
-        Gun_Collider_Physical.enabled = false;
+        //Gun_Collider_Physical.enabled = false;
         
         //Disable Magazine Colliders
-        Magazine_Collider_Physical.enabled = false;
+        //Magazine_Collider_Physical.enabled = false;
         
-        Reload();
+        //Reload();
             
     }
     
@@ -222,18 +224,20 @@ public class Gun : MonoBehaviour {
     public void MagazineExit()
     {
         //Magvar other
-        MagVar.RemoveMag();
+        //MagVar.RemoveMag();
             
         //Wait For Colliders to appear again
-        Thread.Sleep(100);
+        //Thread.Sleep(100);
 
         //Enable Colliders for Magazine
-        Gun_Collider_Physical.enabled = true;
+        //Gun_Collider_Physical.enabled = true;
         
         //Enable Colliders for Magazine
-        Magazine_Collider_Physical.enabled = true;
+       // Magazine_Collider_Physical.enabled = true;
 
         //Message
-        Debug.Log("Magazine Has Been Removed"); 
+        //Debug.Log("Magazine Has Been Removed"); 
     }
+    
+
 }

@@ -240,11 +240,11 @@ MonoBehaviour:
   livesText: {fileID: 3428656159239429011}
   AudioManager: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 0.5
+  walkPointRange: 1
+  timeBetweenAttacks: 1
   projectile: {fileID: 6845118643277486568, guid: 647ac56353c74ad49ae408a2c10d8464, type: 3}
-  sightRange: 6
-  attackRange: 3
+  sightRange: 10
+  attackRange: 5
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!195 &1931368793872739637
@@ -261,7 +261,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

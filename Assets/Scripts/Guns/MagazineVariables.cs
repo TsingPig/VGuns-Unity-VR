@@ -61,7 +61,7 @@ namespace Guns
         
         public void ChangeStats()
         {
-            gunVariables.Magazine_Collider_Physical = Magazine_Collider_Physical;
+            //gunVariables.Magazine_Collider_Physical = Magazine_Collider_Physical;
             gunVariables.muzzleFlash = muzzleFlash;
             gunVariables.round = round;
             gunVariables.ammunition = ammunition;
@@ -74,7 +74,7 @@ namespace Guns
 
         public void RemoveMag()
         {
-            gunVariables.Magazine_Collider_Physical = null;
+            //gunVariables.Magazine_Collider_Physical = null;
             gunVariables.muzzleFlash = null;
             gunVariables.round = null;
             gunVariables.ammunition = 0;
@@ -87,7 +87,7 @@ namespace Guns
 
         public void ChangeMagVar()
         {
-            gunVariables.MagVar = MagVar;
+            //gunVariables.MagVar = MagVar;
         }
 
     }

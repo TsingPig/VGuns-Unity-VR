@@ -8,10 +8,8 @@ public class Round : MonoBehaviour
 {
 
     public GameObject self;
-    
+
     public GameObject explosion;
-    
-    public float Waittime;
 
     public Rigidbody Rigidbody;
 
@@ -21,45 +19,67 @@ public class Round : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         Target target = other.gameObject.GetComponent<Target>();
-        
-        
 
-        if(target != null) {
+
+
+        if (target != null)
+        {
             Debug.Log("Hit");
-    
+
             target.Hit(damage);
-    
+
             Instantiate(explosion, self.transform.position, self.transform.rotation);
 
-            
             Destroy(gameObject); // Deletes the round
         }
-        
+        else
+        {
+            StartCoroutine(Wait());
+        }
 
         XRTarget XRTarget = other.gameObject.GetComponent<XRTarget>();
         // Only attempts to inflict damage if the other game object has
         // the 'EnemyAi' component
-        if(XRTarget != null) {
+        if (XRTarget != null)
+        {
             Debug.Log("Hit");
-    
+
             XRTarget.Hit(damage);
-            
+
             Destroy(gameObject); // Deletes the round
 
         }
 
-        EnemyAi EnemyAi = other.gameObject.GetComponent<EnemyAi>();
+        else
+        {
+            StartCoroutine(Wait());
+        }
+
+        EnemyHealth EnemyHealth = other.gameObject.GetComponent<EnemyHealth>();
         // Only attempts to inflict damage if the other game object has
         // the 'EnemyAi' component
-        if(EnemyAi != null) {
+        if (EnemyHealth != null)
+        {
             Debug.Log("Hit");
-    
-            EnemyAi.TakeDamage(damage);
-            
+
+            EnemyHealth.TakeDamage(damage);
+
             Destroy(gameObject); // Deletes the round
 
         }
-        
-      
+        else
+        {
+            StartCoroutine(Wait());
+
+        }
+    }
+
+    IEnumerator Wait() //  <-  its a standalone method
+    {
+        Debug.Log("Hello");
+        //wait 3 seconds
+        yield return new WaitForSeconds(10);
+        Debug.Log("Goodbye");
+        Destroy(gameObject); // Deletes the round
     }
 }
