@@ -711,7 +711,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SpeedTimeUp",
+                    "name": "Menu",
                     "type": "Button",
                     "id": "69ac3c24-27b1-410e-ae64-2a8efbbef866",
                     "expectedControlType": "Button",
@@ -1080,7 +1080,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SpeedTimeUp",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

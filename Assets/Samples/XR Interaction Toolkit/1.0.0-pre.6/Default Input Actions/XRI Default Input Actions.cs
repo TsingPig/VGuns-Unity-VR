@@ -733,7 +733,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SpeedTimeUp"",
+                    ""name"": ""Menu"",
                     ""type"": ""Button"",
                     ""id"": ""69ac3c24-27b1-410e-ae64-2a8efbbef866"",
                     ""expectedControlType"": ""Button"",
@@ -1102,7 +1102,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""SpeedTimeUp"",
+                    ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1211,7 +1211,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_Jump = m_XRIRightHand.FindAction("Jump", throwIfNotFound: true);
         m_XRIRightHand_Pause = m_XRIRightHand.FindAction("Pause", throwIfNotFound: true);
         m_XRIRightHand_TimeSlow = m_XRIRightHand.FindAction("TimeSlow", throwIfNotFound: true);
-        m_XRIRightHand_SpeedTimeUp = m_XRIRightHand.FindAction("SpeedTimeUp", throwIfNotFound: true);
+        m_XRIRightHand_Menu = m_XRIRightHand.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1489,7 +1489,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
     private readonly InputAction m_XRIRightHand_Jump;
     private readonly InputAction m_XRIRightHand_Pause;
     private readonly InputAction m_XRIRightHand_TimeSlow;
-    private readonly InputAction m_XRIRightHand_SpeedTimeUp;
+    private readonly InputAction m_XRIRightHand_Menu;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -1510,7 +1510,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         public InputAction @Jump => m_Wrapper.m_XRIRightHand_Jump;
         public InputAction @Pause => m_Wrapper.m_XRIRightHand_Pause;
         public InputAction @TimeSlow => m_Wrapper.m_XRIRightHand_TimeSlow;
-        public InputAction @SpeedTimeUp => m_Wrapper.m_XRIRightHand_SpeedTimeUp;
+        public InputAction @Menu => m_Wrapper.m_XRIRightHand_Menu;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1568,9 +1568,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TimeSlow.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTimeSlow;
                 @TimeSlow.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTimeSlow;
                 @TimeSlow.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTimeSlow;
-                @SpeedTimeUp.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSpeedTimeUp;
-                @SpeedTimeUp.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSpeedTimeUp;
-                @SpeedTimeUp.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSpeedTimeUp;
+                @Menu.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_XRIRightHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -1623,9 +1623,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TimeSlow.started += instance.OnTimeSlow;
                 @TimeSlow.performed += instance.OnTimeSlow;
                 @TimeSlow.canceled += instance.OnTimeSlow;
-                @SpeedTimeUp.started += instance.OnSpeedTimeUp;
-                @SpeedTimeUp.performed += instance.OnSpeedTimeUp;
-                @SpeedTimeUp.canceled += instance.OnSpeedTimeUp;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -1700,6 +1700,6 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnJump(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnTimeSlow(InputAction.CallbackContext context);
-        void OnSpeedTimeUp(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }

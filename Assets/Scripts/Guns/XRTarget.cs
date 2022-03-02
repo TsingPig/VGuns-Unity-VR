@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class XRTarget : MonoBehaviour {
     
@@ -30,7 +32,12 @@ public class XRTarget : MonoBehaviour {
         if(health <= 0) {
             if (deathScreen.activeSelf)
             {
-
+                enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                    
+                foreach (GameObject enemy in enemies){
+                    enemy.SetActive(false);
+                }
+                
                 ray_Right.SetActive(true);
                 ray_Left.SetActive(true);
 
@@ -40,12 +47,22 @@ public class XRTarget : MonoBehaviour {
                 TeleportManagerRight.SetActive(false);
                 
                 deathScreen.SetActive(true);
+                
+                StartCoroutine(Wait());
+                
+                SceneManager.LoadScene(0);
             }
             else
             {
                 if (!deathScreen.activeSelf)
                 {
-                    Wait();
+                                     
+                    enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                    
+                    foreach (GameObject enemy in enemies){
+                        enemy.SetActive(false);
+                    }
+
 
                     ray_Right.SetActive(true);
                     ray_Left.SetActive(true);
@@ -56,23 +73,28 @@ public class XRTarget : MonoBehaviour {
                     TeleportManagerRight.SetActive(false);
                 
                     deathScreen.SetActive(true);
+                    
+                    StartCoroutine(Wait());
+
+                    SceneManager.LoadScene(0);
                 }
 
             }
 
         }
     }
-    
-    IEnumerable<WaitForSeconds> Wait()
-    {
-        yield return new WaitForSeconds(1.0f); // waits before continuing in seconds
-        // code to do after the wait
-    }
 
+
+    IEnumerator Wait()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSecondsRealtime(5); 
+    }
 
 
     /// 'Hits' the target for a certain amount of damage
     public void Hit(float damage) {
         health -= damage;
     }
+    
 }

@@ -14,8 +14,8 @@ namespace PauseMenu
         public InputActionReference LeftTogglePauseRefrence = null;
         public InputActionReference RightTogglePauseRefrence = null;
 
-        public XRRayInteractor ray_Right;
-        public XRRayInteractor ray_Left;
+        public GameObject ray_Right;
+        public GameObject ray_Left;
 
         public bool RightTeleport;
         public bool LeftTeleport;
@@ -65,8 +65,8 @@ namespace PauseMenu
         {
             Time.timeScale = 0f;
 
-            ray_Right.enabled = true;
-            ray_Left.enabled = true;
+            ray_Right.SetActive(true);
+            ray_Left.SetActive(true);
 
             LocomotionSystem.SetActive(false);
 
@@ -80,8 +80,8 @@ namespace PauseMenu
         {
             Time.timeScale = 1f;
 
-            ray_Right.enabled = false;
-            ray_Left.enabled = false;
+            ray_Right.SetActive(false);
+            ray_Left.SetActive(false);
 
             LocomotionSystem.SetActive(true);
             

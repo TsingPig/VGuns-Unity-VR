@@ -16,11 +16,9 @@ public class Round : MonoBehaviour
     public int damage;
 
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         Target target = other.gameObject.GetComponent<Target>();
-
-
 
         if (target != null)
         {
@@ -55,7 +53,7 @@ public class Round : MonoBehaviour
             StartCoroutine(Wait());
         }
 
-        EnemyHealth EnemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+        EnemyAi EnemyHealth = other.gameObject.GetComponent<EnemyAi>();
         // Only attempts to inflict damage if the other game object has
         // the 'EnemyAi' component
         if (EnemyHealth != null)
@@ -78,7 +76,7 @@ public class Round : MonoBehaviour
     {
         Debug.Log("Hello");
         //wait 3 seconds
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         Debug.Log("Goodbye");
         Destroy(gameObject); // Deletes the round
     }

@@ -211,6 +211,16 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -976,7 +986,7 @@ PlayerSettings:
   cloudProjectId: 0fe90f54-dde2-43fd-bdf5-ccc3648929c1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Re:Time
+  projectName: Virtual Guns
   organizationId: doctorblobsvr
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
