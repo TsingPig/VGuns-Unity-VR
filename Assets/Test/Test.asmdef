@@ -1,0 +1,25 @@
+{
+    "name": "Test",
+    "rootNamespace": "",
+    "references": [
+        "VRExplorer",
+        "BNG",
+        "Unity.TextMeshPro",
+        "Unity.InputSystem",
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.InputSystem.TestFramework",
+        "Unity.XR.CoreUtils",
+        "Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -2,9 +2,7 @@ using UnityEngine;
 using System.Threading;
 using TMPro;
 using UnityEngine;
-using UnityEngine;
 using System.Collections;
-using Guns;
 using UnityEngine.XR.Interaction.Toolkit;
 using Random = UnityEngine.Random;
 
