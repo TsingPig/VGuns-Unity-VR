@@ -5,8 +5,80 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit;
 using Random = UnityEngine.Random;
+using VRExplorer;
+using System.Diagnostics.CodeAnalysis;
+using BNG;
 
-public class Gun : MonoBehaviour {
+public class Gun : MonoBehaviour, IGrabbableEntity, ITriggerableEntity
+{
+    [ExcludeFromCodeCoverage] public float TriggeringTime => 2.5f;
+    [ExcludeFromCodeCoverage] public string Name => Str.Triggerable;
+
+    [ExcludeFromCodeCoverage]
+    public void Triggerring()
+    {
+        var obj = EntityManager.Instance.vrexplorerMono.gameObject;
+        XRDirectInteractor interactor;
+        if(!obj.TryGetComponent(out interactor))
+        {
+            interactor = obj.AddComponent<XRDirectInteractor>();
+        }
+        if(!obj.GetComponent<ActionBasedController>())
+        {
+            obj.AddComponent<ActionBasedController>();
+        }
+        var interactable = GetComponent<XRBaseInteractable>();
+        var e = new SelectEnterEventArgs() { interactorObject = interactor };
+        var h = new HoverEnterEventArgs() { interactorObject = interactor };
+        var a = new ActivateEventArgs() { interactorObject = interactor };
+        interactable.selectEntered.Invoke(e);
+        interactable.hoverEntered.Invoke(h);
+        interactable.firstSelectEntered.Invoke(e);
+        interactable.firstHoverEntered.Invoke(h);
+        interactable.activated.Invoke(a);
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void Triggerred()
+    {
+        var obj = EntityManager.Instance.vrexplorerMono.gameObject;
+        XRDirectInteractor interactor;
+        if(!obj.TryGetComponent(out interactor))
+        {
+            interactor = obj.AddComponent<XRDirectInteractor>();
+        }
+        if(!obj.GetComponent<ActionBasedController>())
+        {
+            obj.AddComponent<ActionBasedController>();
+        }
+        var e = new SelectExitEventArgs() { interactorObject = interactor };
+        var h = new HoverExitEventArgs() { interactorObject = interactor };
+        var a = new DeactivateEventArgs() { interactorObject = interactor };
+        var interactable = GetComponent<XRBaseInteractable>();
+        interactable.selectExited.Invoke(e);
+        interactable.hoverExited.Invoke(h);
+        interactable.lastSelectExited.Invoke(e);
+        interactable.lastHoverExited.Invoke(h);
+        interactable.deactivated.Invoke(a);
+
+    }
+
+    [ExcludeFromCodeCoverage]
+    public Grabbable Grabbable
+    {
+        get
+        {
+            var g = GetComponent<Grabbable>();
+            if(g) return g;
+            return gameObject.AddComponent<Grabbable>();
+        }
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void OnGrabbed()
+    {
+    }
+
     public enum ShootState {
         Ready,
         Shooting,
