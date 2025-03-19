@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>2025/3/19 - 13:57:01</Generatedon>
+    <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
+    <Assemblies>1</Assemblies>
+    <Classes>8</Classes>
+    <Files>8</Files>
+    <Coveredlines>78</Coveredlines>
+    <Uncoveredlines>194</Uncoveredlines>
+    <Coverablelines>272</Coverablelines>
+    <Totallines>775</Totallines>
+    <Linecoverage>28.6</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>14</Coveredmethods>
+    <Totalmethods>36</Totalmethods>
+    <Methodcoverage>38.8</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="Test" classes="8" coverage="28.6" coveredlines="78" coverablelines="272" totallines="775" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="36" methodcoverage="38.8">
+      <Class name="AudioManager" coverage="51.8" coveredlines="14" coverablelines="27" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="BulletTime" coverage="42.8" coveredlines="3" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="EnemyAi" coverage="45.2" coveredlines="33" coverablelines="73" totallines="154" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="11" methodcoverage="45.4" />
+      <Class name="Gun" coverage="21.8" coveredlines="14" coverablelines="64" totallines="313" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="10" methodcoverage="30" />
+      <Class name="Round" coverage="0" coveredlines="0" coverablelines="39" totallines="83" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="SpeedUpTime" coverage="50" coveredlines="3" coverablelines="6" totallines="22" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="TimeManager" coverage="46.6" coveredlines="7" coverablelines="15" totallines="29" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
+      <Class name="XRTarget" coverage="9.7" coveredlines="4" coverablelines="41" totallines="99" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="3" methodcoverage="33.3" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>
