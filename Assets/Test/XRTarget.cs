@@ -49,7 +49,7 @@ public class XRTarget : MonoBehaviour {
                 
                 StartCoroutine(Wait());
                 
-                SceneManager.LoadScene(0);
+                //SceneManager.LoadScene(0);
             }
             else
             {
@@ -75,7 +75,7 @@ public class XRTarget : MonoBehaviour {
                     
                     StartCoroutine(Wait());
 
-                    SceneManager.LoadScene(0);
+                    //SceneManager.LoadScene(0);
                 }
 
             }
