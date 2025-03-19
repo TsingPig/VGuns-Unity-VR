@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "generatedon": "2025-03-19T01:52:44Z",
+    "parser": "MultiReportParser (13x OpenCoverParser)",
+    "assemblies": 1,
+    "classes": 9,
+    "files": 9,
+    "coveredlines": 199,
+    "uncoveredlines": 133,
+    "coverablelines": 332,
+    "totallines": 888,
+    "linecoverage": 59.9,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 28,
+    "totalmethods": 45,
+    "methodcoverage": 62.2
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "Test", "classes": 9, "coverage": 59.9, "coveredlines": 199, "coverablelines": 332, "totallines": 888, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 62.2, "coveredmethods": 28, "totalmethods": 45, "classesinassembly": [
+        { "name": "AudioManager", "coverage": 77.7, "coveredlines": 21, "coverablelines": 27, "totallines": 51, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
+        { "name": "BulletTime", "coverage": 42.8, "coveredlines": 3, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
+        { "name": "EnemyAi", "coverage": 78, "coveredlines": 57, "coverablelines": 73, "totallines": 154, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 72.7, "coveredmethods": 8, "totalmethods": 11 },
+        { "name": "Gun", "coverage": 70.3, "coveredlines": 45, "coverablelines": 64, "totallines": 313, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 70, "coveredmethods": 7, "totalmethods": 10 },
+        { "name": "PauseMenu.PauseMenu", "coverage": 12, "coveredlines": 7, "coverablelines": 58, "totallines": 113, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 22.2, "coveredmethods": 2, "totalmethods": 9 },
+        { "name": "Round", "coverage": 71.7, "coveredlines": 28, "coverablelines": 39, "totallines": 83, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
+        { "name": "SpeedUpTime", "coverage": 50, "coveredlines": 3, "coverablelines": 6, "totallines": 22, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
+        { "name": "TimeManager", "coverage": 46.6, "coveredlines": 7, "coverablelines": 15, "totallines": 29, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 2, "totalmethods": 4 },
+        { "name": "XRTarget", "coverage": 65.1, "coveredlines": 28, "coverablelines": 43, "totallines": 99, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] } ]
+  }
+}
