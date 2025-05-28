@@ -74,8 +74,15 @@ public class Gun : MonoBehaviour, IGrabbableEntity, ITriggerableEntity
         }
     }
 
+    [ExcludeFromCodeCoverage] public Transform Destination => null;
+
     [ExcludeFromCodeCoverage]
     public void OnGrabbed()
+    {
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void OnReleased()
     {
     }
 
@@ -308,6 +315,6 @@ public class Gun : MonoBehaviour, IGrabbableEntity, ITriggerableEntity
         //Message
         //Debug.Log("Magazine Has Been Removed"); 
     }
-    
+
 
 }
