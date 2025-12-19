@@ -1,13 +1,10 @@
 using UnityEngine;
-using System.Threading;
 using TMPro;
-using UnityEngine;
-using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit;
 using Random = UnityEngine.Random;
-using VRExplorer;
 using System.Diagnostics.CodeAnalysis;
 using BNG;
+using HenryLab;
 
 public class Gun : MonoBehaviour, IGrabbableEntity, ITriggerableEntity
 {

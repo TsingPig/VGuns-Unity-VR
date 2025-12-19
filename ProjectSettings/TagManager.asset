@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Magazine
   - Teleportable
+  - TempTargetTag
   layers:
   - Default
   - TransparentFX
