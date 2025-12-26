@@ -17,23 +17,24 @@ GameObject:
   - component: {fileID: 8183513503680063775}
   - component: {fileID: -7124633244575759073}
   - component: {fileID: 1836658052938599792}
-  - component: {fileID: -6084056083416676230}
-  - component: {fileID: -2695389591854076037}
-  - component: {fileID: 278645575460905787}
-  - component: {fileID: -6580616243254545801}
-  - component: {fileID: 5157733609595383244}
-  - component: {fileID: 6930739868869108562}
-  - component: {fileID: 8996406586898746303}
-  - component: {fileID: 8514627766667190139}
   - component: {fileID: 3187930156940972606}
-  - component: {fileID: -4493940230121769924}
-  - component: {fileID: -6396895855736860180}
   - component: {fileID: -309719655570089016}
   - component: {fileID: -377551901201980533}
   - component: {fileID: 3717957260907308146}
   - component: {fileID: 8790686759032207728}
   - component: {fileID: -7840855447621653721}
   - component: {fileID: 7926929841925448051}
+  - component: {fileID: 341029562141096880}
+  - component: {fileID: -3367202704082555689}
+  - component: {fileID: -4188343127513256589}
+  - component: {fileID: 353937014784799989}
+  - component: {fileID: -4007139261877758292}
+  - component: {fileID: 8097860360104763395}
+  - component: {fileID: 3119335699515623790}
+  - component: {fileID: 7344147750230792674}
+  - component: {fileID: 3135403931156833339}
+  - component: {fileID: 6913964701354763964}
+  - component: {fileID: -6226706148069621369}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -48,8 +49,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299703487714392757}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 9.865141, y: -5.9257574, z: -4.4519253}
+  m_LocalRotation: {x: 0.43045935, y: -0.56098557, z: -0.56098557, w: -0.43045935}
+  m_LocalPosition: {x: 10.065141, y: -5.8257575, z: -4.6019254}
   m_LocalScale: {x: 1.6771339, y: 1.6771339, z: 1.6771339}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -447,238 +448,6 @@ MonoBehaviour:
   GrabPhysics: 1
   GrabMechanic: 0
   destination: {fileID: 0}
---- !u!114 &-6084056083416676230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0
---- !u!114 &-2695389591854076037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Reload
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggeringTime: 0.8
---- !u!114 &278645575460905787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggeringTime: 2.6
---- !u!114 &-6580616243254545801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0.8
---- !u!114 &5157733609595383244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0
---- !u!114 &6930739868869108562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Reload
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggeringTime: 0.8
---- !u!114 &8996406586898746303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggeringTime: 2.6
---- !u!114 &8514627766667190139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0.8
 --- !u!114 &3187930156940972606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,64 +464,6 @@ MonoBehaviour:
   GrabPhysics: 1
   GrabMechanic: 0
   destination: {fileID: 0}
---- !u!114 &-4493940230121769924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Shoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0
---- !u!114 &-6396895855736860180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299703487714392757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Gun, Test
-        m_MethodName: Reload
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggeringTime: 0.8
 --- !u!114 &-309719655570089016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,6 +638,231 @@ MonoBehaviour:
         m_CallState: 2
   triggerredEvents: []
   triggeringTime: 0.8
+--- !u!114 &341029562141096880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Gun, Test
+        m_MethodName: Shoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents: []
+  triggeringTime: 0.8
+--- !u!114 &-3367202704082555689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Gun, Test
+        m_MethodName: Shoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents: []
+  triggeringTime: 0.8
+--- !u!114 &-4188343127513256589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.1
+--- !u!114 &353937014784799989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Gun, Test
+        m_MethodName: Reload
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents: []
+  triggeringTime: 2.6
+--- !u!114 &-4007139261877758292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.1
+--- !u!114 &8097860360104763395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b05e8f39c90dc4fad20aaf0100ad81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.5
+  triggerringTime: 0
+  deltaRotation: {x: 0, y: 15, z: 0}
+  deltaScale: {x: 0, y: 0, z: 0}
+  deltaPosition: {x: 0.2, y: 0.1, z: -0.15}
+--- !u!114 &3119335699515623790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.8
+--- !u!114 &7344147750230792674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.8
+--- !u!114 &3135403931156833339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.1
+--- !u!114 &6913964701354763964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Gun, Test
+        m_MethodName: Reload
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents: []
+  triggeringTime: 2.6
+--- !u!114 &-6226706148069621369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299703487714392757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.1
 --- !u!1 &642232893716808351
 GameObject:
   m_ObjectHideFlags: 0

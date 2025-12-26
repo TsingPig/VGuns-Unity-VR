@@ -5919,8 +5919,6 @@ GameObject:
   - component: {fileID: 4832168211630479034}
   - component: {fileID: 378614782}
   - component: {fileID: 378614788}
-  - component: {fileID: -768756759050565733}
-  - component: {fileID: -2674375949549226278}
   - component: {fileID: -8256156463768547957}
   - component: {fileID: 3234218410288552148}
   - component: {fileID: 4621822359681134211}
@@ -5957,7 +5955,6 @@ GameObject:
   - component: {fileID: -4058981556350883605}
   - component: {fileID: -8371025303498212722}
   - component: {fileID: -4892411769019131261}
-  - component: {fileID: 2991543197844515919}
   - component: {fileID: -3303704213375464907}
   - component: {fileID: -6420192737742923908}
   - component: {fileID: -4637342424022447004}
@@ -5968,7 +5965,10 @@ GameObject:
   - component: {fileID: 1703421680017119266}
   - component: {fileID: 1418207692317885171}
   - component: {fileID: -4090376564448332435}
-  - component: {fileID: -2258183340777308843}
+  - component: {fileID: 2605000697419073856}
+  - component: {fileID: 4450013966420120572}
+  - component: {fileID: -10764961981613123}
+  - component: {fileID: -264981413425617574}
   m_Layer: 10
   m_Name: XR Rig
   m_TagString: XRRig
@@ -5983,8 +5983,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4940586920907814101}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.59, y: -6.17, z: -6.24}
+  m_LocalRotation: {x: 0, y: 0.21643962, z: 0, w: 0.976296}
+  m_LocalPosition: {x: 10.84, y: -6.17, z: -5.74}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6115,64 +6115,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.6452873, z: 0}
---- !u!114 &-768756759050565733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940586920907814101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
-        m_MethodName: MainMenu
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0.1
---- !u!114 &-2674375949549226278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940586920907814101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
-        m_MethodName: Restart
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerredEvents: []
-  triggeringTime: 0.1
 --- !u!114 &-8256156463768547957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7217,25 +7159,6 @@ MonoBehaviour:
         m_CallState: 2
   triggerredEvents: []
   triggeringTime: 0.1
---- !u!114 &2991543197844515919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940586920907814101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b05e8f39c90dc4fad20aaf0100ad81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerringEvents: []
-  triggerredEvents: []
-  triggeringTime: 0.5
-  triggerringTime: 0.5
-  deltaRotation: {x: 0, y: 0, z: 0}
-  deltaScale: {x: 0, y: 0, z: 0}
-  deltaPosition: {x: -6.44, y: 6.66, z: 12.07}
 --- !u!114 &-3303704213375464907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7526,7 +7449,50 @@ MonoBehaviour:
         m_CallState: 2
   triggerredEvents: []
   triggeringTime: 0.1
---- !u!114 &-2258183340777308843
+--- !u!114 &2605000697419073856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940586920907814101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
+        m_MethodName: PauseMenuCheck
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
+        m_MethodName: PauseMenuCheck
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggeringTime: 2
+--- !u!114 &4450013966420120572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7542,9 +7508,71 @@ MonoBehaviour:
   triggerredEvents: []
   triggeringTime: 0.5
   triggerringTime: 0.5
-  deltaRotation: {x: 0, y: 0, z: 0}
+  deltaRotation: {x: 0, y: 15, z: 0}
   deltaScale: {x: 0, y: 0, z: 0}
-  deltaPosition: {x: -6.44, y: 6.66, z: 12.07}
+  deltaPosition: {x: 0.5, y: 0, z: 0}
+--- !u!114 &-10764961981613123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940586920907814101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
+        m_MethodName: PauseMenuCheck
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerredEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu.PauseMenu, Core
+        m_MethodName: PauseMenuCheck
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggeringTime: 2
+--- !u!114 &-264981413425617574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940586920907814101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b05e8f39c90dc4fad20aaf0100ad81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.5
+  triggerringTime: 0.5
+  deltaRotation: {x: 0, y: 10, z: 0}
+  deltaScale: {x: 0, y: 0, z: 0}
+  deltaPosition: {x: 0.75, y: 0, z: 0.5}
 --- !u!1 &4940586921256267539
 GameObject:
   m_ObjectHideFlags: 0
