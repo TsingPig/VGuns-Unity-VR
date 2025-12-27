@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 6845118643277486580}
   - component: {fileID: 6845118643277486570}
   - component: {fileID: 6845118643277486571}
-  - component: {fileID: -572614811429819414}
-  - component: {fileID: 6597835722591734129}
-  - component: {fileID: -5381207028871758959}
+  - component: {fileID: 5964146876382244351}
+  - component: {fileID: -7838816221263538179}
+  - component: {fileID: -7660780483142226148}
+  - component: {fileID: -8313576813010252476}
+  - component: {fileID: -6374575583296110091}
   m_Layer: 13
   m_Name: Laser
   m_TagString: Untagged
@@ -135,7 +137,7 @@ MonoBehaviour:
   explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
   Rigidbody: {fileID: 6845118643277486570}
   damage: 1
---- !u!114 &-572614811429819414
+--- !u!114 &5964146876382244351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +152,7 @@ MonoBehaviour:
   triggerringEvents: []
   triggerredEvents: []
   triggeringTime: 0.2
---- !u!114 &6597835722591734129
+--- !u!114 &-7838816221263538179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +167,37 @@ MonoBehaviour:
   triggerringEvents: []
   triggerredEvents: []
   triggeringTime: 0.5
---- !u!114 &-5381207028871758959
+--- !u!114 &-7660780483142226148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6845118643277486568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.2
+--- !u!114 &-8313576813010252476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6845118643277486568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea063aa6194c2234cac095d8da6e035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerringEvents: []
+  triggerredEvents: []
+  triggeringTime: 0.5
+--- !u!114 &-6374575583296110091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
